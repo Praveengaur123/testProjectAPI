@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Question</title>
+</head>
+<body>
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="sellerprice">Seller Price:</label>
+        <input type="number" name="sellerprice" id="sellerprice">
+        <label for="productname">Product Name:</label>
+        <input type="text" name="productname" id="productname">
+        <label for="category">Choose a Category:</label>
+        <select name="category" id="category">
+            <option value="Electronic Item">Electronic Item</option>
+            <option value="Food">Food</option>
+            <option value="Skincare Item">Skincare Item</option>
+        </select>
+        <button type="submit" id="submit">Add Product</button>
+    </form>
+    <br>
+    <h1>Product</h1>
+    <h3>Electronic Item</h3>
+    <ol id="electric"></ol>
+    <h3>Food Item</h3>
+    <ol id="food"></ol>
+    <h3>Skincare Item</h3>
+    <ol id="skin"></ol>
+</body> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.4/axios.min.js"></script>
+<script src="index.js"></script>
+</html>
